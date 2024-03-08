@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ kiện nữ</title>
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ header{
+    display: flex;
+    justify-content:space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+ }
+ li{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+    color:black;
+ }
+ .logo{
+    flex: 1;
+ }
+ .menu{
+    flex: 3;
+    display:flex;
+ }
+ .menu > li{
+    padding: 0 12px;
+    position:relative;
+ }
+.sub-menu{
+   background-color: white;
+    position:absolute;
+    width: 150px;
+    border: 1px solid #e6dede;
+    padding: 10px 0 10px 20px;
+    visibility:hidden;
+    top: 50px;
+    transition: 0.3s;
+ 
+} 
+.others{
+    flex: 1;
+    display:flex;
+ }
+.others > li{
+    padding: 0 12px;
+}
+.others > li:first-child{
+    position:relative;
+}
+.others > li:first-child input{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #333;
+
+    
+}
+.others > li:first-child i {
+    position:absolute;
+    right: 10px;
+}
+.menu > li a{
+    font-size: 12px;
+    font-weight: bold ;
+    display:block;
+    line-height: 20px;
+}
+.menu > li:hover .sub-menu{
+   
+   color: #1e1b1b;
+    top: 30px;
+   }
+   .img-responsive{
+      max-width: 100%;
+      height: auto;
+      display: block;
+
+   }
+   .sub-menu2{
+      background-color: white;
+      position:absolute;
+      width: 150px;
+      border: 1px solid #ccc;
+      padding: 10px 0 10px 20px;
+      visibility:hidden;
+      top: 50px;
+      transition: 0.3s;
+   }
+   .menu > li:hover .sub-menu2{
+      visibility: visible;
+       top: 30px;
+      }
+      .sub-menu3{
+         background-color: white;
+         position:absolute;
+         width: 150px;
+         border: 1px solid #ccc;
+         padding: 10px 0 10px 20px;
+         visibility:hidden;
+         top: 50px;
+         transition: 0.3s;
+      }
+      .menu > li:hover .sub-menu3{
+         visibility: visible;
+          top: 30px;
+         }
+         .sub-menu4{
+            background-color: white;
+            position:absolute;
+            width: 150px;
+            border: 1px solid #ccc;
+            padding: 10px 0 10px 20px;
+            visibility:hidden;
+            top: 50px;
+            transition: 0.3s;
+         }
+         .menu > li:hover .sub-menu4{
+            visibility: visible;
+             top: 30px;
+            }
+            .menu > li:hover .sub-menu{
+               visibility: visible;
+                top: 30px;
+               }
+   
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color: #111;
+        }
+        #wrapper{
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        h3{
+            align-self: center;
+            font-size: 18px;
+            color:#111;
+            padding: 10px 20px ;
+            text-transform:uppercase ;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600 ;
+        }
+        ul.product{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap ;
+            justify-content: space-between;
+            padding: 20px 0px ;
+        }
+        ul.product li{
+            flex-basis: 25% ;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+
+        ul.product li img{
+            max-width: 100%;
+            height: auto;
+        }
+        .product-name{
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            color:#9e9e9e;
+            padding: 3px 0px ;
+        }
+        .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+       .buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color:#fff;
+            padding: 10px 0px;
+            visibility:hidden;
+         top: 50px;
+         transition: 0.3s;
+        
+
+        }
+        li:hover .buy-now {
+            visibility: visible;
+             top: 30px;
+            }
+            .app-containter{
+      text-align: center;
+      align-items: center;
+      padding: 150px 0px 50px 0px;
+   }
+.footer-bottom{
+    align-items: center;
+}
+
+
+
+    </style>
+     <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" ></a>
+        </div>
+        <div class="menu">
+            <li><a href="">Nữ</a> 
+        <ul color="black" class="sub-menu">
+            <li><a href="quan_ao_nu.html"> quần - áo </a></li>
+            <li><a href="phu_kien_nu.html"> Phụ kiện </a></li>
+        </ul>
+    
+    
+            <li><a href="">Nam</a>
+            <ul class="sub-menu2">
+                
+                <li><a href="quan_ao_nam.html">Quần - áo </a></li>
+                <li><a href="phu_kien_nam.html">Phụ kiện</a></li>
+            </ul>
+            
+            </li>
+            <li><a href="">Trẻ em</a>
+            <ul class="sub-menu3">
+                <li><a href="quanaochobe.html"> Quần - áo </a></li>
+                <li><a href="phu_kien_be.html"> Phụ kiện </a></li>
+            </ul>       
+            </li>
+            
+            
+            <li><a href="khau_trang.html">Khẩu trang</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+    
+        </div>
+        </header>
+    <div  id="wrapper" >
+        <div class="headline">
+        <h3 >Phụ kiện nữ</h3>
+        </div>
+    </div>
+<ul class="product">
+    <li>
+        <div class="product-item">
+            <a href="" class="product-thumb">
+                <img src="images/phukiennu1.webp" alt="">
+            </a>
+            <a href="" class="buy-now">Mua ngay</a>
+                <a href="" class="product-name">quần lót SWE basic </a>
+                <div class="product-price">150.000VNĐ</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="product-item">
+            <a href="" class="product-thumb">
+                <img src="images/phukiennu2.webp" alt="">
+            </a>
+            <a href="" class="buy-now">Mua ngay</a>
+
+                <a href="" class="product-name">quần lót SWE basic </a>
+                <div class="product-price">150.000VNĐ</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="product-item">
+            <a href="" class="product-thumb">
+                <img src="images/phukiennu3.webp" alt="">
+            </a>
+            <a href="" class="buy-now">Mua ngay</a>
+
+                <a href="" class="product-name">túi vải Swe</a>
+                <div class="product-price">75.000VNĐ</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="product-item">
+            <a href="" class="product-thumb">
+                <img src="images/phukiennu4.webp" alt="">
+            </a>
+            <a href="" class="buy-now">Mua ngay</a>
+
+                <a href="" class="product-name">balo swe</a>
+                <div class="product-price">550.000VNĐ</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="product-item">
+            <a href="" class="product-thumb">
+                <img src="images/phukiennu5.webp" alt="">
+            </a>
+            <a href="" class="buy-now">Mua ngay</a>
+
+                <a href="" class="product-name">bình dữ nhiệt SWE</a>
+                <div class="product-price">200.000VNĐ</div>
+            </div>
+        </div>
+    </li>
+
+</header>
+
+
+<div class="footer-bottom">
+    @VANSON.AND.BAOCHAU
+</div>   
+</body>
+</html>
